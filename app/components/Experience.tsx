@@ -1,41 +1,4 @@
-const experiences = [
-  {
-    startDate: "Aug 2021",
-    endDate: "Mar 2023",
-    position: "SDE",
-    name: "SaaS Labs · Internship",
-    location: "Palo Alto, California, United States · Remote",
-    description: [
-      "- Responsible for development of two separate web applications using React.js from scratch.",
-      "- Boosted application performance by 15% following best practices such as lazy-loading, infinite-scroll, debounce,code splitting and other performance optimisations.",
-      "- Designed and develop a matchmaking algorithm using socket.io and Twilio.",
-      "- Contributed in developing and maintaining apis for the application using Node.js(Express)",
-      "- Created reusable functional components and custom hooks for web applications and performed Error handling using Error Boundaries",
-    ],
-  },
-  {
-    startDate: "Jan 2023",
-    endDate: "Feb 2023",
-    position: "Full stack developer",
-    name: "Pearl Thoughts · Part-time",
-    location: "India · Remote",
-    description: [
-      "- Built a PDF Generation service using the serverless framework (TypeScript) and deployed it on AWS lambda.",
-      "- Integrated the service in a next.js (TypeScript) application.",
-    ],
-  },
-  {
-    startDate: "Jun 2021",
-    endDate: "July 2021",
-    position: "Full stack engineer",
-    name: "Lets Endorse · Internship",
-    location: "Banglore, Karnataka, India · Remote",
-    description: [
-      "- Built an end-to-end admin module, which allows admin to select a particular area on a map, add or delete coordinates using a form or clicking on the map, save related data, using React and Google Maps JavaScript API.",
-      "- Designed required Schemas in Mongodb, and created required APIs in Node.js following RESTful API Conventions..",
-    ],
-  },
-];
+import { experiences } from "~/data";
 
 export default function Experience() {
   return (
