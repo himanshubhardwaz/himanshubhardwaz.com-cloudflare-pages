@@ -21,13 +21,6 @@ export default function Navbar() {
               Contact
             </a>
           </li>
-          <li>
-            <button
-              aria-label='theme-button'
-              id='theme-button'
-              className='dark:text-light rounded-lg p-4 ml-2 bg-slate-100 dark:bg-[#202020]'
-            ></button>
-          </li>
         </ul>
       </nav>
     </header>

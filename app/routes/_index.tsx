@@ -1,6 +1,6 @@
 import type { V2_MetaFunction } from "@remix-run/cloudflare";
-import Navbar from "~/components/Navbar";
-import Footer from "~/components/Footer";
+import Hero from "~/components/Hero";
+import Experience from "~/components/Experience";
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -11,9 +11,9 @@ export const meta: V2_MetaFunction = () => {
 
 export default function Index() {
   return (
-    <main className='container max-w-6xl px-4'>
-      <Navbar />
-      <Footer />
-    </main>
+    <>
+      <Hero />
+      <Experience />
+    </>
   );
 }
