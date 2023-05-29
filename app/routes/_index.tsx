@@ -1,4 +1,6 @@
 import type { V2_MetaFunction } from "@remix-run/cloudflare";
+import Navbar from "~/components/Navbar";
+import Footer from "~/components/Footer";
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -9,8 +11,9 @@ export const meta: V2_MetaFunction = () => {
 
 export default function Index() {
   return (
-    <>
-      <p className='font-semibold text-3xl'>PORTFOLIO 2-0</p>
-    </>
+    <main className='container max-w-6xl px-4'>
+      <Navbar />
+      <Footer />
+    </main>
   );
 }
