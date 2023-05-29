@@ -1,8 +1,8 @@
 export default function Hero() {
   return (
-    <section className='px-4'>
+    <section>
       <p className='mt-[117px]'>Hey, I’m</p>
-      <h1 className='main-heading text-5xl'>Himanshu Bhardwaz</h1>
+      <h1 className='main-heading text-7xl'>Himanshu Bhardwaz</h1>
       <p className='text-lg mb-16 text-justify'>
         I am a software Engineer with 3 years of industry-level experience. I
         have honed my skills in a wide range of technologies, including HTML,

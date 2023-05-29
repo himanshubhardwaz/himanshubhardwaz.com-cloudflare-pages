@@ -48,7 +48,7 @@ const projects = [
 
 export default function FeaturedProjects() {
   return (
-    <section className='px-4'>
+    <section>
       <p className='w-[15rem] font-semibold text-lg mt-16'>Featured Projects</p>
       <div className='grid md:grid-cols-2 grid-cols-1 gap-4 my-16'>
         {projects.map((project, index) => (

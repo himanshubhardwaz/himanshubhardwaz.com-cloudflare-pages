@@ -39,7 +39,7 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section className='flex items-start justify-between flex-col sm:flex-row dark:text-light px-4'>
+    <section className='flex items-start justify-between flex-col sm:flex-row dark:text-light'>
       <p className='w-[15rem] mt-16 font-semibold text-xl'>Experience</p>
       <div className='w-full'>
         {experiences.map((item) => (
