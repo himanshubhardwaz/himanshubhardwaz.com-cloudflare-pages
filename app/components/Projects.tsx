@@ -1,55 +1,24 @@
 import { Link } from "@remix-run/react";
 
-const projects = [
-  {
-    title: "Dialworks",
-    thumbnail:
-      "https://ik.imagekit.io/q1caodkhg/Portfolio_Statics/dialworks.png?updatedAt=1685343492678",
-    liveUrl: "https://dialworks.io",
-    githubUrl: "",
-  },
-  {
-    title: "memegeneratorai",
-    thumbnail:
-      "https://ik.imagekit.io/q1caodkhg/Portfolio_Statics/memegeneratorai.png?updatedAt=1685343477251",
-    liveUrl: "https://memegeneratorai.online",
-    githubUrl: "https://github.com/himanshubhardwaz/memegeneratorai",
-  },
-  {
-    title: "react-use-form-validate",
-    thumbnail:
-      "https://ik.imagekit.io/q1caodkhg/Portfolio_Statics/create-npm-typescript-package.png?updatedAt=1685343722999",
-    liveUrl: "https://www.npmjs.com/package/react-use-form-validate",
-    githubUrl: "https://github.com/himanshubhardwaz/react-use-form-validate",
-  },
-  {
-    title: "takepoll",
-    thumbnail:
-      "https://ik.imagekit.io/q1caodkhg/Portfolio_Statics/takepoll.png?updatedAt=1685343783107",
-    liveUrl: "https://takepoll.vercel.app",
-    githubUrl: "https://github.com/himanshubhardwaz/takepoll",
-  },
-  {
-    title: "Chess game",
-    thumbnail:
-      "https://ik.imagekit.io/q1caodkhg/Portfolio_Statics/chess.png?updatedAt=1685343607042",
-    liveUrl: "https://chess-2-0.vercel.app",
-    githubUrl: "https://github.com/himanshubhardwaz/chess-2-0",
-  },
-  {
-    title: "create-npm-typescript-package",
-    thumbnail:
-      "https://ik.imagekit.io/q1caodkhg/Portfolio_Statics/create-npm-typescript-package.png?updatedAt=1685343722999",
-    liveUrl: "https://www.npmjs.com/package/create-npm-typescript-package",
-    githubUrl:
-      "https://github.com/himanshubhardwaz/create-npm-typescript-package",
-  },
-];
+type Project = {
+  githubUrl: string;
+  liveUrl: string;
+  thumbnail: string;
+  title: string;
+};
 
-export default function FeaturedProjects() {
+export default function FeaturedProjects({
+  title,
+  projects,
+}: {
+  title?: string;
+  projects: Array<Project>;
+}) {
   return (
-    <section className='px-4'>
-      <p className='w-[15rem] font-semibold text-lg mt-16'>Featured Projects</p>
+    <section>
+      {title && (
+        <p className='w-[15rem] font-semibold text-lg mt-16'>{title}</p>
+      )}
       <div className='grid md:grid-cols-2 grid-cols-1 gap-4 my-16'>
         {projects.map((project, index) => (
           <article
