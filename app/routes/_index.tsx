@@ -1,4 +1,6 @@
 import type { V2_MetaFunction } from "@remix-run/cloudflare";
+import Hero from "~/components/Hero";
+import Experience from "~/components/Experience";
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -10,7 +12,8 @@ export const meta: V2_MetaFunction = () => {
 export default function Index() {
   return (
     <>
-      <p className='font-semibold text-3xl'>PORTFOLIO 2-0</p>
+      <Hero />
+      <Experience />
     </>
   );
 }
