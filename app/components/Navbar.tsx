@@ -17,8 +17,8 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <a className='p-4 dark:text-light block text-lg' href='/contact'>
-              Contact
+            <a className='p-4 dark:text-light block text-lg' href='/blog'>
+              Blogs
             </a>
           </li>
         </ul>
