@@ -72,7 +72,7 @@ export const projects = [
   {
     title: "react-use-form-validate",
     thumbnail:
-      "https://ik.imagekit.io/q1caodkhg/Portfolio_Statics/create-npm-typescript-package.png?updatedAt=1685343722999",
+      "https://opengraph.githubassets.com/aa55e4a45c75a3d72a3fbe1791116ffc8c01cb32d6846e991f70d7d93939f2a7/himanshubhardwaz/react-use-form-validate",
     liveUrl: "https://www.npmjs.com/package/react-use-form-validate",
     githubUrl: "https://github.com/himanshubhardwaz/react-use-form-validate",
   },
@@ -93,7 +93,7 @@ export const projects = [
   {
     title: "create-npm-typescript-package",
     thumbnail:
-      "https://ik.imagekit.io/q1caodkhg/Portfolio_Statics/create-npm-typescript-package.png?updatedAt=1685343722999",
+      "https://opengraph.githubassets.com/aa55e4a45c75a3d72a3fbe1791116ffc8c01cb32d6846e991f70d7d93939f2a7/himanshubhardwaz/create-npm-typescript-package",
     liveUrl: "https://www.npmjs.com/package/create-npm-typescript-package",
     githubUrl:
       "https://github.com/himanshubhardwaz/create-npm-typescript-package",

@@ -24,7 +24,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className='no-scrollbar'>
         <main className='container max-w-6xl px-4'>
           <Navbar />
           <Outlet />
