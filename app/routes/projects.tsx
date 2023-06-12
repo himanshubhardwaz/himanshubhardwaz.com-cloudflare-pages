@@ -1,5 +1,5 @@
 import FeaturedProjects from "~/components/Projects";
-import { projects } from "~/data";
+import { projects } from "~/content/data";
 
 export default function Projects() {
   return (

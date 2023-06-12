@@ -21,14 +21,5 @@ module.exports = {
   },
   tailwind: true,
   config: {
-    // Add a new rule for Markdown files
-    module: {
-      rules: [
-        {
-          test: /\.md$/,
-          loader: "markdown-loader",
-        },
-      ],
-    },
   },
 };
