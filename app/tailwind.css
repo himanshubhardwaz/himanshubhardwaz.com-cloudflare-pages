@@ -54,7 +54,7 @@ body {
   h4,
   h5,
   h1 {
-    @apply text-6xl sm:text-8xl main-heading;
+    @apply text-6xl sm:text-8xl;
   }
   h2 {
     @apply text-xl font-semibold;

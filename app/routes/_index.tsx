@@ -16,7 +16,7 @@ export default function Index() {
     <>
       <Hero />
       <Experience />
-      <FeaturedProjects title='Featured Projects' projects={featuredProjects} />
+      <FeaturedProjects title="Featured Projects" projects={featuredProjects} />
     </>
   );
 }
