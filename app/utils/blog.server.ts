@@ -1,5 +1,5 @@
 export const fetchBlog = async (blogname: string) => {
-  const url = `https://api.github.com/repos/himanshubhardwaz/portfolio-2.0/contents/blogs/${blogname}.md`;
+  const url = `https://api.github.com/repos/himanshubhardwaz/blogs/contents/${blogname}.md`;
   const headers = new Headers();
   const userAgent = navigator.userAgent;
   headers.append("User-Agent", userAgent);
