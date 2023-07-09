@@ -1,19 +1,28 @@
+interface Blog {
+  content: string;
+}
 
-
-export const fetchBlog = async ({slug, githubApiToken} : {slug: string, githubApiToken: string}) => {
+export const fetchBlog = async ({ slug, githubApiToken }: { slug: string; githubApiToken: string }): Promise<string | Error> => {
   const url = `https://api.github.com/repos/himanshubhardwaz/blogs/contents/${slug}.md`;
+
   const headers = new Headers();
   const userAgent = navigator.userAgent;
+
   headers.append("User-Agent", userAgent);
-  return fetch(url, { headers })
-    .then((response) => response.json())
-    .then((data) => {
-      // @ts-ignore
+  headers.append("Authorization", `Bearer ${githubApiToken}`);
+
+  try {
+    const response = await fetch(url, { headers });
+
+    if (response.ok) {
+      const data: Blog = await response.json();
       const content = atob(data.content);
-      console.log({content})
       return content;
-    })
-    .catch((error) => {
-      throw new Error(error);
-    });
+    } else {
+      throw new Error(`Failed to fetch blog: ${response.status}`);
+    }
+  } catch (error) {
+    console.log({errorMain: error})
+    throw new Error("Could not fetch this blog!");
+  }
 };

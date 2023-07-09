@@ -6,15 +6,15 @@ import {marked} from "marked"
 
 export const loader = async ({ params, context }: LoaderArgs) => {
   const slug = params.slug;
-  const GITHUB_API_TOKEN = context.GITHUB_API_TOKEN as string;
+  const GITHUB_ACCESS_TOKEN = context.GITHUB_ACCESS_TOKEN as string;
   
   if (!slug) throw new Error("No slug specified");
 
-  const blog = await fetchBlog({slug, githubApiToken : GITHUB_API_TOKEN});
+  const response = await fetchBlog({slug, githubApiToken : GITHUB_ACCESS_TOKEN});
 
-  if (!blog) throw new Error("No blog found");
+  if(response instanceof Error) throw response;
 
-  return json({ blog : marked(blog)});
+  return json({ blog : marked(response)});
 };
 
 export default function Blog() {
