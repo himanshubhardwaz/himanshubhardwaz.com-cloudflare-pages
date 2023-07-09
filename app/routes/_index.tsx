@@ -5,18 +5,15 @@ import FeaturedProjects from "~/components/Projects";
 import { featuredProjects } from "~/utils/data";
 
 export const meta: V2_MetaFunction = () => {
-  return [
-    { title: "Himanshu's Portfolio" },
-    { name: "description", content: "Welcome to Himanshu's portfolio!" },
-  ];
+    return [{ title: "Himanshu's Portfolio" }, { name: "description", content: "Welcome to Himanshu's portfolio!" }];
 };
 
 export default function Index() {
-  return (
-    <>
-      <Hero />
-      <Experience />
-      <FeaturedProjects title="Featured Projects" projects={featuredProjects} />
-    </>
-  );
+    return (
+        <>
+            <Hero />
+            <Experience />
+            <FeaturedProjects title="Featured Projects" projects={featuredProjects} />
+        </>
+    );
 }
