@@ -7,7 +7,12 @@ export async function loader({ context }: LoaderArgs) {
     const githubAccessToken = context.GITHUB_ACCESS_TOKEN as string;
     const response = await fetchBlogs({ githubAccessToken });
     if (response instanceof Error) throw response;
-    return json({ blogs: response });
+    return json(
+        { blogs: response },
+        {
+            headers: { "Cache-Control": "public, s-maxage=1800" },
+        },
+    );
 }
 
 export default function BlogIndex() {
@@ -25,8 +30,8 @@ export default function BlogIndex() {
                             {". "}
                             <Link to={`/blog/${blogname}`}>{blogname}</Link>
                         </li>
-                    )}
-                )}
+                    );
+                })}
             </ul>
             <Outlet />
         </main>

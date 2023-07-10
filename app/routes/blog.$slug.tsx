@@ -14,7 +14,7 @@ export const loader = async ({ params, context }: LoaderArgs) => {
 
     if (response instanceof Error) throw response;
 
-    return json({ blog: marked(response) });
+    return json({ blog: marked(response) }, { headers: { "Cache-Control": "public, s-maxage=1800" } });
 };
 
 export default function Blog() {
