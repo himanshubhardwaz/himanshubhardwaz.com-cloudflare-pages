@@ -1,6 +1,5 @@
-# Welcome to Remix!
-
-- [Remix Docs](https://remix.run/docs)
+# himanshubhardwaz.com
+![Screenshot 2023-07-10 at 3 43 17 PM](https://github.com/himanshubhardwaz/portfolio-2.0/assets/62508572/43131b0d-0542-4a69-ad70-724e77fca399)
 
 ## Development
 
