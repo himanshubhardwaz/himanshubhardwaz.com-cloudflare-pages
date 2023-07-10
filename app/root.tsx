@@ -16,7 +16,7 @@ export default function App() {
                 <Links />
             </head>
             <body className="no-scrollbar">
-                <main className="container max-w-6xl px-4 min-h-screen relative">
+                <main className="container max-w-6xl px-4 min-h-screen">
                     <Navbar />
                     <Outlet />
                     <Footer />

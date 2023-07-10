@@ -14,18 +14,21 @@ export default function BlogIndex() {
     const { blogs } = useLoaderData<typeof loader>();
 
     return (
-        <>
-            <p className="text-3xl">Blogs:</p>
+        <main className="min-h-[calc(100vh-210px)] sm:min-h-[calc(100vh-270px)]">
+            <h1 className="main-heading text-7xl">Blogs </h1>
             <ul className="my-6">
-                {blogs.map((blog, index) => (
-                    <li key={blog} className="text-lg mt-4">
-                        {index + 1}
-                        {". "}
-                        <Link to={`/blog/${getTitleFromBlogName(blog)}`}>{getTitleFromBlogName(blog)}</Link>
-                    </li>
-                ))}
+                {blogs.map((blog, index) => {
+                    const blogname = getTitleFromBlogName(blog);
+                    return (
+                        <li key={blog} className="text-lg mt-4">
+                            {index + 1}
+                            {". "}
+                            <Link to={`/blog/${blogname}`}>{blogname}</Link>
+                        </li>
+                    )}
+                )}
             </ul>
             <Outlet />
-        </>
+        </main>
     );
 }

@@ -9,8 +9,8 @@ type Project = {
 
 export default function FeaturedProjects({ title, projects }: { title?: string; projects: Array<Project> }) {
     return (
-        <section>
-            {title && <p className="w-[15rem] font-semibold text-lg mt-16">{title}</p>}
+        <section className="my-16">
+            {title && <p className="w-[15rem] font-semibold text-lg">{title}</p>}
             <div className="grid md:grid-cols-2 grid-cols-1 gap-4 my-16">
                 {projects.map((project, index) => (
                     <article className="w-full max-h-[25rem] overflow-hidden relative group" key={index}>

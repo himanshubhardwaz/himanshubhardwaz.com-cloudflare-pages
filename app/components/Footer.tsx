@@ -2,7 +2,7 @@ import { Link } from "@remix-run/react";
 
 export default function Footer() {
     return (
-        <footer className="container flex sm:flex-row flex-col justify-between items-center mb-8 sm:mb-4 absolute bottom-[-150px]">
+        <footer className="container flex sm:flex-row flex-col justify-between items-center mb-8 sm:mb-4 h-[130px] sm:h-[123px]">
             <p className="dark:text-light text-right my-8">
                 Developed by <strong>Himanshu Bhardwaz</strong>
             </p>

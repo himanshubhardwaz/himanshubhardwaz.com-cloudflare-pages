@@ -10,10 +10,10 @@ export const meta: V2_MetaFunction = () => {
 
 export default function Index() {
     return (
-        <>
+        <main>
             <Hero />
             <Experience />
             <FeaturedProjects title="Featured Projects" projects={featuredProjects} />
-        </>
+        </main>
     );
 }
