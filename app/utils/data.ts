@@ -57,7 +57,7 @@ export const projects = [
         title: "memegeneratorai",
         thumbnail: "https://ik.imagekit.io/q1caodkhg/Portfolio_Statics/memegeneratorai.png?updatedAt=1685343477251",
         liveUrl: "https://memegeneratorai.online",
-        githubUrl: "https://github.com/himanshubhardwaz/memegeneratorai",
+        githubUrl: "",
         techStack: ["remix.run", "TypeScript", "Tailwind CSS", "Headless ui", "Prisma", "PostgreSQL", "Clodinary", "openai", "NLPConnect/ViT-GPT2-Image-Captioning model"],
     },
     {
@@ -72,7 +72,7 @@ export const projects = [
         title: "takepoll",
         thumbnail: "https://ik.imagekit.io/q1caodkhg/Portfolio_Statics/takepoll.png?updatedAt=1685343783107",
         liveUrl: "https://takepoll.vercel.app",
-        githubUrl: "https://github.com/himanshubhardwaz/takepoll",
+        githubUrl: "",
         techStack: ["Next.js", "TypeScript", "Tailwind CSS", "prisma", "PostgreSQL", "@tanstack/react-query"],
     },
     {
