@@ -1,6 +1,7 @@
 import { Link } from "@remix-run/react";
 
 type Project = {
+    techStack: Array<string>;
     githubUrl: string;
     liveUrl: string;
     thumbnail: string;
@@ -74,8 +75,14 @@ export default function FeaturedProjects({ title, projects }: { title?: string; 
                                 alt="featureImage"
                             />
                         </Link>
-                        <div className="absolute w-full bottom-0 left-0 backdrop-blur-md dark:text-white text-white bg-black/50 p-4 translate-y-[100%] group-hover:translate-y-0 transition duration-700">
-                            <p className="mr-2 text-xl">{project.title}</p>
+                        <div className="absolute w-full inset-0 backdrop-blur-md dark:text-white text-white bg-black/50 p-4 translate-y-[100%] group-hover:translate-y-0 transition duration-700">
+                            <p className="mr-2 text-xl mb-2">{project.title}</p>
+                            <p>Tech Stack: </p>
+                            <ul className="flex gap-1 flex-wrap">
+                                {project?.techStack?.map((tech, index) => (
+                                    <li key={tech}>{tech}{index !== project.techStack.length - 1 && ", "}</li>
+                                ))}
+                            </ul>
                         </div>
                     </article>
                 ))}
